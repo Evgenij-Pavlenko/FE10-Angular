@@ -16,6 +16,9 @@ export class CityTileComponent implements OnInit {
   @Input()
   path: string;
 
+  @Input()
+  temperature = 0;
+
   constructor() {
   }
 

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {CityDto} from '../dto/CityDto';
 
 @Component({
   selector: 'app-add-city-tile',
@@ -6,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./add-city-tile.component.scss']
 })
 export class AddCityTileComponent implements OnInit {
+  city: CityDto = {
+    name: 'Add new city',
+    imageUrl : 'assets/img/plus.png',
+    path : 'new-city'
+  };
 
   constructor() { }
 

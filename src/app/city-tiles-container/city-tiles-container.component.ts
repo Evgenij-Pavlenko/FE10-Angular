@@ -32,4 +32,8 @@ export class CityTilesContainerComponent implements OnInit {
         );
       });
   }
+
+  removeCity(event: string): void {
+    console.log('This city with id ${id} will be removed');
+  }
 }
